@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { StringOpsComponent } from './string-ops/string-ops.component';
+import { FirstChildComponent } from './first-child/first-child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StringOpsComponent
+    StringOpsComponent,
+    FirstChildComponent
   ],
   imports: [
     BrowserModule,

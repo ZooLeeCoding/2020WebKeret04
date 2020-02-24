@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'WebKeret03';
 
+  child_message: string;
+
   books = ['Harry Potter', 'Lord of the Rings', 'Star Wars', 'Warhammer'];
 
   handleClick() {
@@ -16,5 +18,10 @@ export class AppComponent {
 
   buyBook(title: string) {
     this.title = 'Megvettem a ' + title + ' című könyvet';
+  }
+
+  onChildMessage(msg: string) {
+    console.log(msg);
+    this.child_message = msg;
   }
 }

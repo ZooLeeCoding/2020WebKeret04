@@ -1,6 +1,9 @@
-<p>
+<h2>
   {{title}}
-</p>
+</h2>
+<h4>
+  {{child_message}}
+</h4>
 <button (click)="handleClick()">
   Ez egy gomb
 </button>
@@ -15,4 +18,7 @@
 <input type='text' placeholder='szoveg' [(ngModel)]='title'>
 <div>
   <app-string-ops></app-string-ops>
+</div>
+<div>
+  <app-first-child [title]="title" (saysomething)="onChildMessage($event)"></app-first-child>
 </div>
